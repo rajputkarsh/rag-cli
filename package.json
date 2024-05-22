@@ -1,0 +1,26 @@
+{
+  "name": "rag-cli",
+  "version": "1.0.0",
+  "description": "Retrieval Augmented Generation (RAG) based CLI tool to help you talk with your documents",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajputkarsh/rag-cli.git"
+  },
+  "keywords": [
+    "rag",
+    "ai",
+    "chatbot",
+    "gemini",
+    "chatgpt"
+  ],
+  "author": "Utkarsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajputkarsh/rag-cli/issues"
+  },
+  "homepage": "https://github.com/rajputkarsh/rag-cli#readme"
+}
