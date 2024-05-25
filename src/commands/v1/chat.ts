@@ -1,9 +1,9 @@
 import readline from "readline";
 import { getChatMessage } from "@/utils";
 import { getConfig } from "@/utils";
-import { handleError } from "@/utils/handle-error";
-import { logger } from "@/utils/logger";
-import { chatModel } from "@/utils/models/chat-model";
+import { handleError } from "@/utils";
+import { logger } from "@/utils";
+import { ChatModel } from "@/models";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { Command } from "commander";
 import ora from "ora";
