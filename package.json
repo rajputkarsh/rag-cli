@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/rajputkarsh/rag-cli/issues"
   },
-  "homepage": "https://github.com/rajputkarsh/rag-cli#readme"
+  "homepage": "https://github.com/rajputkarsh/rag-cli#readme",
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
+  }
 }
