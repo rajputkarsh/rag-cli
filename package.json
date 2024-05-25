@@ -3,8 +3,32 @@
   "version": "1.0.0",
   "description": "Retrieval Augmented Generation (RAG) based CLI tool to help you talk with your documents",
   "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "bin": {
+    "rag-cli": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "start": "node dist/index.js ",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply-unsafe .",
+    "format": "biome format .",
+    "format:fix": "biome format --write .",
+    "code-check": "biome check .",
+    "code-check:fix": "biome check --apply-unsafe .",
+    "biome:ci": "biome ci .",
+    "pub:release": "pnpm build && pnpm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -18,7 +42,8 @@
     "chatgpt"
   ],
   "author": "Utkarsh",
-  "license": "ISC",
+  "preferGlobal": true,
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rajputkarsh/rag-cli/issues"
   },
@@ -27,6 +52,7 @@
     "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12"
+    "@types/node": "^20.12.12",
+    "tsup": "^8.0.2"
   }
 }
