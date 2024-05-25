@@ -53,12 +53,14 @@
     "@langchain/core": "^0.2.0",
     "@langchain/google-genai": "^0.0.16",
     "commander": "^12.1.0",
+    "configstore": "^6.0.0",
     "langchain": "^0.2.2",
     "ora": "^8.0.1",
     "package-json": "^10.0.0",
     "type-fest": "^4.18.3"
   },
   "devDependencies": {
+    "@types/configstore": "^6.0.2",
     "@types/node": "^20.12.12",
     "tsup": "^8.0.2"
   }
