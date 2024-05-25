@@ -3,7 +3,7 @@ import { getChatMessage } from "@/utils";
 import { getConfig } from "@/utils";
 import { handleError } from "@/utils";
 import { logger } from "@/utils";
-import { ChatModel } from "@/models";
+import { chatModel } from "@/models";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { Command } from "commander";
 import ora from "ora";
