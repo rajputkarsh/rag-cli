@@ -25,7 +25,7 @@ const login = new Command()
         ...CONFIG_INFO,
       };
 
-      const config = new Configstore("gemai/config");
+      const config = new Configstore("rag-cli/config");
 
       if (!config.path) {
         spinner.stop();

@@ -16,18 +16,11 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup",
+    "dev": "nodemon --watch . src/index.ts",
+    "build": "tsc --build",
     "typecheck": "tsc --noEmit",
     "clean": "rimraf dist",
     "start": "node dist/index.js ",
-    "lint": "biome lint .",
-    "lint:fix": "biome lint --apply-unsafe .",
-    "format": "biome format .",
-    "format:fix": "biome format --write .",
-    "code-check": "biome check .",
-    "code-check:fix": "biome check --apply-unsafe .",
-    "biome:ci": "biome ci .",
     "pub:release": "pnpm build && pnpm publish --access public"
   },
   "repository": {
@@ -56,6 +49,7 @@
     "commander": "^12.1.0",
     "configstore": "^6.0.0",
     "html-to-text": "^9.0.5",
+    "jsdom": "^24.0.0",
     "json-colorizer": "^3.0.1",
     "langchain": "^0.2.2",
     "nanoid": "^5.0.7",
@@ -69,7 +63,9 @@
     "@types/html-to-text": "^9.0.4",
     "@types/node": "^20.12.12",
     "@types/prompts": "^2.4.9",
+    "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
+    "tsx": "^4.11.0",
     "type-fest": "^4.18.3",
     "typescript": "^5.4.5"
   }

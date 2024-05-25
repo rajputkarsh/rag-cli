@@ -8,7 +8,7 @@ import prompts from "prompts";
 
 const config = new Command()
   .name("config")
-  .description("see your configured gemai credentails")
+  .description("see your configured rag-cli credentails")
   .action(async () => {
     const spinner = ora("Getting config file...").start();
 
@@ -125,7 +125,7 @@ config
         }
       );
 
-      const getconfig = new Configstore("gemai/config");
+      const getconfig = new Configstore("rag-cli/config");
 
       getconfig.set("maxOutputTokens", options.maxOutputTokens);
       getconfig.set("topK", options.topK);

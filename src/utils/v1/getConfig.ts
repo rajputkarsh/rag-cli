@@ -1,6 +1,6 @@
 import Configstore from "configstore";
 
-interface GemAIConfig {
+interface RagCliConfig {
   apiKey: string;
   maxOutputTokens: number;
   topK: number;
@@ -8,14 +8,14 @@ interface GemAIConfig {
   temperature: number;
 }
 
-async function getConfig(): Promise<GemAIConfig | null> {
+async function getConfig(): Promise<RagCliConfig | null> {
   const getConfig = new Configstore("rag-cli/config");
 
   if (!getConfig.size) {
     return null;
   }
 
-  const config = (await getConfig.all) as GemAIConfig;
+  const config = (await getConfig.all) as RagCliConfig;
 
   return config;
 }

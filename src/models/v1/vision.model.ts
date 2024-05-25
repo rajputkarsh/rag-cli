@@ -3,7 +3,7 @@ import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 
 const configInfo = await getConfig();
 
-export const visionModel = new ChatGoogleGenerativeAI({
+const visionModel = new ChatGoogleGenerativeAI({
   modelName: "gemini-pro-vision",
   onFailedAttempt: (error) => {
     handleError(error);
@@ -22,3 +22,5 @@ export const visionModel = new ChatGoogleGenerativeAI({
     },
   ],
 });
+
+export default visionModel;

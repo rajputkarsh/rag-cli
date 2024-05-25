@@ -22,7 +22,7 @@ async function getSavedVectorStore<T extends Document<Record<string, any>>>(
   options: agrs
 ): Promise<FaissStore> {
   try {
-    const config = new Configstore("gemai/config");
+    const config = new Configstore("rag-cli/config");
     const folder = dirname(config.path);
     const store = join(folder, options.name ?? getNanoid());
 
