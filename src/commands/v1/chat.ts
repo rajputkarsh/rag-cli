@@ -1,8 +1,5 @@
 import readline from "readline";
-import { getChatMessage } from "@/utils";
-import { getConfig } from "@/utils";
-import { handleError } from "@/utils";
-import { logger } from "@/utils";
+import { getChatMessage, getConfig, handleError, logger } from "@/utils";
 import { chatModel } from "@/models";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { Command } from "commander";
