@@ -1,4 +1,4 @@
-import { embeddingModel } from "@/models";
+import { embeddingModel } from "../../models";
 import type { Document } from "@langchain/core/documents";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";

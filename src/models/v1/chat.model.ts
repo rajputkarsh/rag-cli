@@ -1,5 +1,5 @@
-import { getConfig } from "@/utils";
-import { handleError } from "@/utils";
+import { getConfig } from "../../utils";
+import { handleError } from "../../utils";
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 
 const configInfo = await getConfig();

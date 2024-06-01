@@ -1,7 +1,7 @@
 import fs from "fs";
 import readline from "readline";
-import { getConfig, handleError, logger } from "@/utils";
-import { visionModel } from "@/models";
+import { getConfig, handleError, logger } from "../../utils";
+import { visionModel } from "../../models";
 import { HumanMessage, SystemMessage } from "@langchain/core/messages";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { Command } from "commander";

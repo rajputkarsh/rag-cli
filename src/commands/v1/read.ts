@@ -1,9 +1,9 @@
 import readline from "readline";
-import { CONFIG_INFO } from "@/constants";
-import { getConfig, getQAMessage, handleError, logger } from "@/utils";
-import { chatModel } from "@/models";
-import { getMemoryVectorStore, getSavedVectorStore } from "@/stores";
-import { optionsSchema } from "@/validators";
+import { CONFIG_INFO } from "../../constants";
+import { getConfig, getQAMessage, handleError, logger } from "../../utils";
+import { chatModel } from "../../models";
+import { getMemoryVectorStore, getSavedVectorStore } from "../../stores";
+import { optionsSchema } from "../../validators";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { Command, Option } from "commander";
 import { compile } from "html-to-text";

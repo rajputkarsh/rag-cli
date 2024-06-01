@@ -1,4 +1,4 @@
-import { getConfig, handleError, logger } from "@/utils";
+import { getConfig, handleError, logger } from "../../utils";
 import chalk from "chalk";
 import { Command } from "commander";
 import Configstore from "configstore";

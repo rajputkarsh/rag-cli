@@ -1,4 +1,4 @@
-import { logger } from "@/utils";
+import { logger } from "../../utils";
 import { z } from "zod";
 
 function handleError(error: unknown): void {

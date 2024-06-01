@@ -1,5 +1,5 @@
-import { verify, handleError, logger } from "@/utils";
-import { CONFIG_INFO } from "@/constants";
+import { verify, handleError, logger } from "../../utils";
+import { CONFIG_INFO } from "../../constants";
 import chalk from "chalk";
 import { Command } from "commander";
 import Configstore from "configstore";

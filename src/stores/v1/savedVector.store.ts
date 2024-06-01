@@ -1,8 +1,8 @@
 import { promises as fsPromises } from "fs";
 import { dirname, join } from "path";
-import { getNanoid } from "@/utils";
-import { embeddingModel } from "@/models";
-import { optionsSchema } from "@/validators";
+import { getNanoid } from "../../utils";
+import { embeddingModel } from "../../models";
+import { optionsSchema } from "../../validators";
 import { FaissStore } from "@langchain/community/vectorstores/faiss";
 import type { Document } from "@langchain/core/documents";
 import Configstore from "configstore";

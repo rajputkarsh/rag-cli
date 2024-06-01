@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import { chat, config, login, read, vision } from "@/commands";
-import { getInfo } from "@/utils";
+import { chat, config, login, read, vision } from "./commands";
+import { getInfo } from "./utils";
 import { Command } from "commander";
 
 process.on("SIGINT", () => process.exit(0));
